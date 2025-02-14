@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Valentín 💖</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6e6;
+            margin: 50px;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        h1 {
+            color: #ff3366;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        #yes {
+            background-color: #ff66b2;
+            color: white;
+        }
+        #no {
+            background-color: #666;
+            color: white;
+            position: absolute;
+        }
+        #loveImage {
+            display: none;
+            margin-top: 20px;
+            max-width: 80%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¿Quieres ser mi San Valentín? 💕</h1>
+        <div class="buttons">
+            <button id="yes" onclick="acceptLove()">Sí, quiero 💖</button>
+            <button id="no" onmouseover="moveButton()">No, quiero 💔</button>
+        </div>
+        <img id="loveImage" src="WhatsApp Image 2025-02-13 at 21.18.33.jpeg" alt="Pareja besándose">
+    </div>
+
+    <script>
+        function acceptLove() {
+            document.getElementById("loveImage").style.display = "block";
+            alert("¡Sabía que dirías que sí! 💘🥰");
+        }
+
+        function moveButton() {
+            let button = document.getElementById("no");
+            let x = Math.random() * (window.innerWidth - 100);
+            let y = Math.random() * (window.innerHeight - 50);
+            button.style.left = x + "px";
+            button.style.top = y + "px";
+        }
+    </script>
+</body>
+</html>
