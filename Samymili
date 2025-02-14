@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>San Valentín 💖</title>
+    <title>¿Quieres ser mi San Valentín? 💖</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -52,7 +52,7 @@
             <button id="yes" onclick="acceptLove()">Sí, quiero 💖</button>
             <button id="no" onmouseover="moveButton()">No, quiero 💔</button>
         </div>
-        <img id="loveImage" src="WhatsApp Image 2025-02-13 at 21.18.33.jpeg" alt="Pareja besándose">
+        <img id="loveImage" src="imagen.jpg" alt="Pareja besándose">
     </div>
 
     <script>
